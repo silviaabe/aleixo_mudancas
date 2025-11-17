@@ -1,74 +1,62 @@
-# React + TypeScript + Vite
+# 🚛 Aleixo Mudanças – Freelancer Demo Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<br>
 
-Currently, two official plugins are available:
+![Demo GIF](https://github.com/user-attachments/assets/a65fd0b1-408c-4b5c-a285-7754fcd29625)  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?logo=next.js&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?logo=tailwind-css&logoColor=white)
 
-## React Compiler
+---
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## 🔹 Description
+Aleixo Mudanças is a moving services management system.  
+This demo project allows users to manage **employees, autonomous workers, vehicles, teams, and orders** with full CRUD functionality.  
 
-## Expanding the ESLint configuration
+The frontend is deployed on [Vercel](https://aleixo-mudancas.vercel.app/) and connects to a **demo backend** with pre-populated data.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+> ⚠️ All actions on the demo site affect only the demo backend. The original backend remains intact.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🔹 Features
+- ✅ User authentication with **login demo**  
+- ✅ Manage **Autonomous Workers** (create, edit, deactivate/reactivate, delete)  
+- ✅ Manage **Employees**, **Admins**, **Teams**, **Vehicles**, and **Orders**  
+- ✅ CRUD operations for all entities  
+- ✅ Pre-populated demo data for testing  
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🔹 Live Demo
+[🌐 Access the demo here](https://aleixo-mudancas.vercel.app/)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Demo Login
+Use the following credentials:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# mudancasfront
+**DEMO:**  
+- Email: `demo@demo.com`  
+- Password: `demo123`  
+
+> After login, you can explore all demo data and interact with the system (create, edit, delete).  
+> Changes are made in the demo backend and **do not affect the original backend**.
+
+---
+
+## 🔹 Technologies
+- **Frontend:** React, Next.js, Tailwind CSS  
+- **Backend:** Node.js, Express, MongoDB, Mongoose  
+- **Authentication:** JWT  
+- **Testing:** Jest (backend)  
+- **Deployment:** Vercel (frontend), Render (backend demo)  
+
+---
+
+## 🔹 Author
+
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/silvia-abe) [![GitHub](https://img.shields.io/badge/-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/silviaabe)  
+
+Silvia Abe - silviaabebuzatto@gmail.com
